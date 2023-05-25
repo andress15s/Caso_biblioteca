@@ -88,6 +88,6 @@ public class Libro
     public String toString()
     {
         return "Información del libro: "+ "\n✓ El nombre del libro es : " + nombreLibro +"\n✓ El autor es: " + nombreAutor1 + calcularNombreAutor2() + 
-         "\n✓ El año de la edicion del libro es: "+anioEdicion + "\n✓ La colección es : "+ edicionLujo; 
+         "\n✓ El año de la edicion del libro es: "+anioEdicion + "\n✓ EDICION DE LUJO : "+ edicionLujo ; 
     }
 }
