@@ -54,5 +54,11 @@ public class Controlador implements ActionListener
                 modelo.setEdicionLujo(vista.miPanelEntradaDatos.getEdicionLujo());
                 vista.miPanelResultados.mostrarResultado(modelo);
             }
+
+            if (comando.equals("Otro autor"))
+            {
+                vista.miPanelEntradaDatos.getTfh();
+
+            }
         }
 }

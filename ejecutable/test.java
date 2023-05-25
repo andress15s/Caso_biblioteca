@@ -9,9 +9,9 @@ public class test
 {
     public static void main (String[] args)
     {
-       VentanaPrincipal miVentana= new VentanaPrincipal();
+       /*VentanaPrincipal miVentana= new VentanaPrincipal();
        Libro miModelo = new Libro(null, null, null, 0, null);  
-       Controlador miControlador = new Controlador(miVentana,miModelo);
+       Controlador miControlador = new Controlador(miVentana,miModelo);*/
 
        //entrada consola
          Libro miModelo1 = new Libro(null, null, null, 0, null);
@@ -32,8 +32,7 @@ public class test
             miModelo2.setNombreColeccion("Harry Potter sagas");
             miModelo2.setNumColeccion(1);
             System.out.println(miModelo2.toString());
-            System.out.println("\n------------------------------------\n");
-
+            System.out.println("\n------------------------------------\n"); 
 
 
 

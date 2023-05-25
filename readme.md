@@ -8,4 +8,5 @@ si se trata de un libro con mas de dos autores quiere guardar el primer autor, y
 aparecer “y otros”.
 
 ![diagrama](diagrama.png)
+![evidencia](evidencia.png)
 

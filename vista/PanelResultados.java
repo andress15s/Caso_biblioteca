@@ -29,13 +29,13 @@ public class PanelResultados extends JPanel
         this.setBackground(Color.WHITE);
 
         //Crear y agregar area de texto 
-        taResultado= new JTextArea();
+        taResultado= new JTextArea("bienvendio a la biblioteca del cucho Pérez");
         spResultado = new JScrollPane(taResultado);
         spResultado.setBounds(10,20,760,220);
         this.add(spResultado);
 
         //Borde y titulo al panel 
-        TitledBorder borde = BorderFactory.createTitledBorder("Resultados");
+        TitledBorder borde = BorderFactory.createTitledBorder("ARCHIVADOS");
         borde.setTitleColor(Color.BLUE);
         this.setBorder(borde);
 
@@ -51,5 +51,19 @@ public class PanelResultados extends JPanel
     {
         taResultado.setText("");
     }  
+
+    // metodo de acceso a la informacion
+    public void mostrarResultado(String p)
+    {
+        taResultado.setText(p);
+    }
+
+    // borrar resultados   
+    public void borrar(String p)
+    {
+        taResultado.setText(p);
+    }
+
+    
     
 }

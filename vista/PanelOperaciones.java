@@ -28,24 +28,24 @@ public class PanelOperaciones extends JPanel
 
         //crear y agregar boton hallar
         btHallar = new JButton("Hallar");
-        btHallar.setBounds(45,25,80,40);
+        btHallar.setBounds(45,10,80,30);
         this.add(btHallar);
         btHallar.setActionCommand("Hallar");
 
         // crear y agregar boton borrar
         btBorrar = new JButton("Borrar");
-        btBorrar.setBounds(250,25,80,40);
+        btBorrar.setBounds(250,10,80,30);
         this.add(btBorrar);
         btBorrar.setActionCommand("Borrar");
 
         // crear y agregar boton salir
         btSalir = new JButton("Salir");
-        btSalir.setBounds(450,25,80,40);
+        btSalir.setBounds(450,10,80,30);
         this.add(btSalir);
         btSalir.setActionCommand("Salir");
 
         //Borde y titulo al panel 
-        TitledBorder borde = BorderFactory.createTitledBorder("Operaciones");
+        TitledBorder borde = BorderFactory.createTitledBorder("");
         borde.setTitleColor(Color.BLUE);
         this.setBorder(borde);
 

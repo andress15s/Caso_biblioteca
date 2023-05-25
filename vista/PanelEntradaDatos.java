@@ -3,6 +3,7 @@ package vista;
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -39,7 +40,7 @@ public class PanelEntradaDatos extends JPanel
     public PanelEntradaDatos()
     {
         //crear y agregar imagen
-        iImagen = new ImageIcon("imagenes/Biblioteca.png");
+        iImagen = new ImageIcon("C:/Users/carla/Desktop/Programacion orientada/Caso_biblioteca/vista/imagenes/Biblioteca.png");
         lImagen = new JLabel(iImagen);
         lImagen.setBounds(10,10,200,200);
         this.add(lImagen);
@@ -47,7 +48,7 @@ public class PanelEntradaDatos extends JPanel
         
 
         // crear y agregar etiqueta x
-        lx = new JLabel("Nombre del libro =");
+        lx = new JLabel("Nombre del libro");
         lx.setBounds(270, 30, 200, 20);
         this.add(lx);
 
@@ -57,7 +58,7 @@ public class PanelEntradaDatos extends JPanel
         this.add(tfx);
 
         // crear y agregar etiqueta y
-        ly = new JLabel("Nombre autor 1=");
+        ly = new JLabel("Nombre autor ");
         ly.setBounds(270, 70, 120, 20);
         this.add(ly);
 
@@ -66,14 +67,17 @@ public class PanelEntradaDatos extends JPanel
         tfy.setBounds(400,70,80,20);
         this.add(tfy);
 
-        lh = new JLabel("Nombre autor 2=");
-        lh.setBounds(270, 110, 120, 20);
-        this.add(lh);
 
-        //crear caja de texto y
-        tfh = new JTextField();
-        tfh.setBounds(400,110,80,20);
-        this.add(tfh);
+        //etiqueta para otro autor
+        JLabel otroAutor = new JLabel("¿Otro autor?");
+        otroAutor.setBounds(270,100,120,20);
+        this.add(otroAutor);
+
+
+        //crear un boton y agregarlo para otro autor
+        JButton btnOtroAutor = new JButton("Otro autor");
+        btnOtroAutor.setBounds(400,100,100,20);
+        this.add(btnOtroAutor);
 
         // crear y agregar etiqueta y
         lz = new JLabel("Año edicion =");
@@ -105,7 +109,7 @@ public class PanelEntradaDatos extends JPanel
         this.setBackground(Color.YELLOW);
 
         //Borde y titulo al panel 
-        TitledBorder borde = BorderFactory.createTitledBorder("BIBLIOTECA");
+        TitledBorder borde = BorderFactory.createTitledBorder("BIBLIOTECA DEL SEÑOR PÉREZ");
         borde.setTitleColor(Color.BLUE);
         this.setBorder(borde);
     }
