@@ -1,11 +1,11 @@
-package Controlador;
+package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import vista.VentanaPrincipal;
 import modelo.Libro;
 
-public class controlador implements ActionListener
+public class Controlador implements ActionListener
 {
     
         //------------
@@ -20,7 +20,7 @@ public class controlador implements ActionListener
         //------------
     
         //metodo constructor
-        public controlador(VentanaPrincipal pVista, Libro pModelo)
+        public Controlador(VentanaPrincipal pVista, Libro pModelo)
         {
             this.vista = pVista;
             this.modelo= pModelo;
@@ -50,7 +50,7 @@ public class controlador implements ActionListener
                 modelo.setNombreLibro(vista.miPanelEntradaDatos.getTfx());
                 modelo.setNombreAutor1(vista.miPanelEntradaDatos.getTfy());
                 modelo.setNombreAutor2(vista.miPanelEntradaDatos.getTfh());
-                modelo.setAñoEdicion(Integer.parseInt(vista.miPanelEntradaDatos.getTfz()));
+                modelo.setAnioEdicion(Integer.parseInt(vista.miPanelEntradaDatos.getTfz()));
                 modelo.setEdicionLujo(vista.miPanelEntradaDatos.getEdicionLujo());
                 vista.miPanelResultados.mostrarResultado(modelo);
             }

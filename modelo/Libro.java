@@ -6,12 +6,12 @@ public class Libro
     //---------------------
     //Atributos
     //---------------------
-    public String nombreLibro;
-    public String nombreAutor1;
-    public String nombreAutor2;
-    public int añoEdicion;
-    public String edicionLujo;
-    //public boolean edicionLujo;
+    protected String nombreLibro;
+    protected String nombreAutor1;
+    protected String nombreAutor2;
+    protected int anioEdicion;
+    protected String edicionLujo;
+    
 
     //---------------------
     //Métodos
@@ -23,18 +23,18 @@ public class Libro
         this.nombreLibro = nLi;
         this.nombreAutor1 = nAu1;
         this.nombreAutor2 = nAu2;
-        this.añoEdicion = aEd;
+        this.anioEdicion = aEd;
         this.edicionLujo= eLu;
     }
 
-    public Libro(Libro pb)
+   /*  public Libro(Libro pb)
     {
         this.nombreLibro = pb.getNombreLibro();
         this.nombreAutor1 = pb.getNombreAutor1();
         this.nombreAutor2 = pb.getNombreAutor2();
         this.añoEdicion = (int) pb.getAñoEdicion();
         this.edicionLujo = pb.getEdicionLujo();
-    }
+    }*/
 
     //Metodos de acceso
     public String getNombreLibro() {
@@ -58,12 +58,12 @@ public class Libro
     public void setNombreAutor2(String nombreAutor2) {
         this.nombreAutor2 = nombreAutor2;
     }
-    public int getAñoEdicion() {
-        return añoEdicion;
+    public int getAnioEdicion() {
+        return anioEdicion;
     }
 
-    public void setAñoEdicion(int añoEdicion) {
-        this.añoEdicion = añoEdicion;
+    public void setAnioEdicion(int añoEdicion) {
+        this.anioEdicion = añoEdicion;
     }
     public String getEdicionLujo() {
         return edicionLujo;
@@ -88,6 +88,6 @@ public class Libro
     public String toString()
     {
         return "Información del libro: "+ "\n✓ El nombre del libro es : " + nombreLibro +"\n✓ El autor es: " + nombreAutor1 + calcularNombreAutor2() + 
-         "\n✓ El año de la edicion del libro es: "+añoEdicion + "\n✓ La colección es : "+ edicionLujo; 
+         "\n✓ El año de la edicion del libro es: "+anioEdicion + "\n✓ La colección es : "+ edicionLujo; 
     }
 }

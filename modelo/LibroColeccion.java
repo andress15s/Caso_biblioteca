@@ -26,4 +26,8 @@ public class LibroColeccion extends Libro
     public void setSerieColeccion(int numColeccion) {
         this.numColeccion = numColeccion;
     }
+    public String toString()
+    {
+        return super.toString() + " " + this.nombreColeccion + " " + this.numColeccion;
+    }
 }

@@ -28,19 +28,19 @@ public class PanelOperaciones extends JPanel
 
         //crear y agregar boton hallar
         btHallar = new JButton("Hallar");
-        btHallar.setBounds(45,40,215,60);
+        btHallar.setBounds(45,25,80,40);
         this.add(btHallar);
         btHallar.setActionCommand("Hallar");
 
         // crear y agregar boton borrar
         btBorrar = new JButton("Borrar");
-        btBorrar.setBounds(310,40,215,60);
+        btBorrar.setBounds(250,25,80,40);
         this.add(btBorrar);
         btBorrar.setActionCommand("Borrar");
 
         // crear y agregar boton salir
         btSalir = new JButton("Salir");
-        btSalir.setBounds(550,40,215,60);
+        btSalir.setBounds(450,25,80,40);
         this.add(btSalir);
         btSalir.setActionCommand("Salir");
 
